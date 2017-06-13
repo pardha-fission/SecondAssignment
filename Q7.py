@@ -13,6 +13,12 @@ import numpy as np
 # initialize a list to hold the lines.
 random_num_list = []
 
+
+line_no = int(input('enter the line of required element: '))-1
+
+element_no = int(input('enter the element index'))-1
+
+
 for i in range(20):
     # creting a list of 10 random numbers using numpy random.random_integers function
     x = np.random.random_integers(1,100,10)
