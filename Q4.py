@@ -16,8 +16,11 @@ try:
     a = int(input('enter the numerator: '))
     b = int(input('enter the denominator: '))
     print('{0}/{1} = {2}'.format(a,b,(a/b)))
+
+
 except ValueError as e:
     print('{0} is not an integer'.format(e))
+
 except ZeroDivisionError as e:
     print('Division by Zero is Infinite')
 

@@ -1,10 +1,15 @@
 '''
 1) Question check if number is a prime and it's first bit is set
+
+for checking the bit position bin() function is used this is more effective than dividing
+by 2 for the number of bit postions because each bit position is known by just passing
+position as argument.
+
 '''
 
 def is_prime(integer):
     for number in range(2,integer//2+1):
-        if integer % number ==0:
+        if integer % number == 0:
             return False
     return True
 
